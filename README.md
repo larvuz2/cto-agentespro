@@ -13,9 +13,17 @@ This is **not** a Jira workflow. Jira is optional. The default source of truth i
 - Git available
 - Optional: GitHub CLI `gh` for GitHub PR/repo automation
 
-## Quickstart: one URL install
+## Quickstart: simplest install
 
-Paste this into another Hermes environment:
+Paste this URL into another Hermes agent and say: `install this CTO software team`.
+
+```txt
+https://larvuz2.github.io/skills/cto-agentespro.md
+```
+
+The first instruction inside that public reader tells the target agent to install the full tarball package, because the complete CTO team needs scripts, templates, references, and generated profiles.
+
+If you are installing directly from a terminal instead of asking a Hermes agent, run:
 
 ```bash
 set -euo pipefail
@@ -30,12 +38,6 @@ Then reload skills or start a new Hermes session and ask:
 
 ```txt
 Use cto-agentespro. Review this repo, create a Kanban plan, and implement the smallest safe fix for <goal>.
-```
-
-Public reader URL:
-
-```txt
-https://larvuz2.github.io/skills/cto-agentespro.md
 ```
 
 ## Local install
