@@ -1,0 +1,38 @@
+client: example-client
+profile: client-example
+
+core_umbrellas:
+  - cto-agentespro
+  - beautiful-presentations
+  - client-operations-system
+  - brand-system-builder
+
+software_team:
+  orchestrator: cto-agentespro
+  default_profiles:
+    - builder-agentespro
+    - reviewer-agentespro
+    - qa-agentespro
+    - devops-agentespro
+  optional_profiles:
+    - designer-agentespro
+    - data-agentespro
+    - docs-agentespro
+
+repos:
+  - name:
+    path:
+    github:
+    base_branch: main
+    production_url:
+    staging_url:
+
+approval_required:
+  - production_merge
+  - production_deploy
+  - destructive_database_migration
+  - repo_deletion
+
+notifications:
+  channel: telegram-home
+  cadence: important_events_only
