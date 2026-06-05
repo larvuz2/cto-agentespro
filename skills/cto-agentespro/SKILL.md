@@ -1,11 +1,11 @@
 ---
 name: cto-agentespro
-description: "Orchestrate a Hermes-native software team for agentesPRO: understand software goals, create Kanban tasks, delegate to specialist profiles, manage GitHub/DB/deployment workflow, and keep humans in control of merge/deploy decisions."
-version: 0.1.0
+description: "Orchestrate a Hermes-native software team: understand software goals, create Kanban tasks, delegate to specialist profiles, manage GitHub/DB/deployment workflow, and keep humans in control of merge/deploy decisions."
+version: 0.2.0
 author: Larvuz
 metadata:
   created_by: agent
-  tags: [software-development, kanban, github, orchestration, agentespro, devops, qa]
+  tags: [software-development, kanban, github, orchestration, devops, qa]
 ---
 
 # CTO-agentespro
@@ -44,6 +44,8 @@ Understand → Plan → Kanban tasks → Delegate/execute → Review → QA → 
 ```
 
 Do not ask for Jira. Jira is optional. Default is Hermes Kanban.
+
+If Kanban tools are unavailable in the current session, maintain a lightweight task board in the response or in `.hermes/project-brief.md` until Kanban is available. Do not fall back to Jira by default.
 
 ## Team roles
 
@@ -185,6 +187,14 @@ Done
 - blockers or human decision needed
 ```
 
+## Portable distribution
+
+When the user asks to share, install, copy, publish, or reuse this software-team skill on another Hermes VPS/profile, package the skill as both a public Markdown reader and a tarball with an install script, then verify download, extraction, installation, and model-agnostic behavior before saying it is ready.
+
+Use `scripts/package_skill.py` to build reproducible distribution artifacts.
+
+Use `scripts/init_repo_context.py` inside target repos to create `AGENTS.md` and an optional `.hermes/project-brief.md`.
+
 ## Linked references
 
 - `references/team-architecture.md`
@@ -193,3 +203,7 @@ Done
 - `references/delegation-prompts.md`
 - `references/repo-context-standard.md`
 - `references/safety-and-human-approval.md`
+- `references/portable-team-skill-distribution.md`
+- `scripts/install_cto_agentespro.py`
+- `scripts/init_repo_context.py`
+- `scripts/package_skill.py`

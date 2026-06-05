@@ -1,4 +1,4 @@
-# CTO-agentesPRO Team Architecture
+# CTO-agentespro Team Architecture
 
 ## Principle
 

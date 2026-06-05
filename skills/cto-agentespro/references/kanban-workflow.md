@@ -2,6 +2,8 @@
 
 Default source of truth: Hermes Kanban.
 
+If Kanban tools are unavailable in the current session, keep a lightweight board in the response or in `.hermes/project-brief.md` until Kanban is available.
+
 Jira/Linear/GitHub Issues are optional adapters, not required.
 
 ## Board states

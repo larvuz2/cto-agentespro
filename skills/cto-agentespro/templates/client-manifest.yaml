@@ -1,8 +1,10 @@
 client: example-client
 profile: client-example
 
-core_umbrellas:
+core_skills:
   - cto-agentespro
+
+optional_skills:
   - beautiful-presentations
   - client-operations-system
   - brand-system-builder
