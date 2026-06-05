@@ -195,6 +195,8 @@ Use `scripts/package_skill.py` to build reproducible distribution artifacts.
 
 Use `scripts/init_repo_context.py` inside target repos to create `AGENTS.md` and an optional `.hermes/project-brief.md`.
 
+Use `scripts/start_cto_project.py` to create a real Kanban board and initial CTO/Builder/Reviewer/QA/DevOps cards for a software build objective.
+
 ## Linked references
 
 - `references/team-architecture.md`
@@ -204,6 +206,8 @@ Use `scripts/init_repo_context.py` inside target repos to create `AGENTS.md` and
 - `references/repo-context-standard.md`
 - `references/safety-and-human-approval.md`
 - `references/portable-team-skill-distribution.md`
+- `references/kanban-project-launch.md`
 - `scripts/install_cto_agentespro.py`
 - `scripts/init_repo_context.py`
+- `scripts/start_cto_project.py`
 - `scripts/package_skill.py`

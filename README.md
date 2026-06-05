@@ -110,6 +110,7 @@ cto-agentespro/
   scripts/
     install_cto_agentespro.py
     init_repo_context.py
+    start_cto_project.py
     package_skill.py
 ```
 
@@ -143,6 +144,39 @@ This creates:
 - `.hermes/project-brief.md`
 
 It does not overwrite existing files unless `--force` is passed.
+
+## Start a real Kanban software-team board
+
+Create the CTO cockpit for a build:
+
+```bash
+python3 ~/.hermes/skills/software-development/cto-agentespro/scripts/start_cto_project.py \
+  --board my-app \
+  --repo /absolute/path/to/repo \
+  --objective "Build the requested feature" \
+  --dispatch-dry-run
+```
+
+This creates:
+
+- parent CTO objective card
+- CTO scope/acceptance card
+- blocked Builder implementation card
+- blocked Reviewer code/security pass
+- blocked QA acceptance/browser pass
+- blocked DevOps CI/deploy/database check
+
+Watch the board:
+
+```bash
+hermes kanban --board my-app list
+```
+
+Run one real dispatcher pass when ready:
+
+```bash
+hermes kanban --board my-app dispatch --max 2
+```
 
 ## Human authority rule
 
